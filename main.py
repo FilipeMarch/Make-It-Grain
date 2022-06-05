@@ -20,8 +20,6 @@ class MakeItGrain(Scene):
         number_of_horizontal_arranged_circles = 4/(2*circle_radius)
         number_of_vertical_arranged_circles = 2/(2*circle_radius)
 
-        ic(number_of_circles.get_value(), circle_radius, number_of_horizontal_arranged_circles, number_of_vertical_arranged_circles, grain_size_value.get_value())
-
         circles = Group(
                     *[VGroup(
                         *[Circle(radius = circle_radius, color=BLUE)
